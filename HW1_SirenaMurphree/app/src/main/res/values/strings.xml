@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HW1_SirenaMurphree</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="user_info_header">
+        <item>
+            Name
+        </item>
+        <item>
+            Department
+        </item>
+        <item>
+            Year
+        </item>
+    </string-array>
+    <string-array name="user_info_data">
+        <item>
+            Sirena L. Murphree
+        </item>
+        <item>
+            Software Engineering
+        </item>
+        <item>
+            3
+        </item>
+    </string-array>
+</resources>

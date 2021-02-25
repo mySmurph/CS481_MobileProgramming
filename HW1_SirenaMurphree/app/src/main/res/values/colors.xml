@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--https://color.adobe.com/trends/Game-design-->
+    <color name="purple_200">#F25270</color>
+    <color name="purple_500">#D94848</color>
+    <color name="purple_700">#51548C</color>
+    <color name="teal_200">#73D99F</color>
+    <color name="teal_700">#49A68B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
