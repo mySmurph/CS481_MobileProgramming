@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".relitivelayout">
+
+<TextView
+    android:id="@+id/r_tv_checkout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginRight="24dp"
+    android:gravity="center"
+    android:text="Checkout"
+    android:textSize="36sp" />
+
+<EditText
+    android:id="@+id/r_input_firstName"
+    android:layout_width="196dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/r_tv_checkout"
+    android:layout_alignStart="@+id/r_tv_checkout"
+    android:layout_alignLeft="@id/r_input_LastName"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="2dp"
+    android:hint="First Name"
+    android:inputType="textPersonName" />
+
+<EditText
+    android:id="@+id/r_input_LastName"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/r_tv_checkout"
+    android:layout_alignEnd="@+id/r_tv_checkout"
+    android:layout_alignRight="@+id/r_tv_checkout"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_toRightOf="@+id/r_input_firstName"
+    android:hint="Last Name"
+    android:inputType="textPersonName" />
+
+<EditText
+    android:id="@+id/r_input_cardNum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginRight="24dp"
+    android:ems="10"
+    android:hint="Card Number"
+    android:inputType="textPersonName"
+    android:layout_below="@+id/r_input_firstName"
+    />
+
+<TextView
+    android:id="@+id/r_tv_expire"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginRight="24dp"
+    android:text="Expire"
+    android:layout_below="@+id/r_input_cardNum"/>
+
+<Spinner
+    android:id="@+id/r_spin_month"
+    android:layout_width="128dp"
+    android:layout_height="48dp"
+    android:layout_below="@+id/r_tv_expire"
+    android:layout_alignStart="@+id/r_tv_expire"
+    android:layout_alignLeft="@+id/r_tv_expire"
+    android:layout_marginStart="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:entries="@array/spinn_month_content" />
+
+<Spinner
+    android:id="@+id/r_spin_year"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_below="@+id/r_tv_expire"
+    android:layout_toRightOf="@+id/r_spin_month"/>
+
+<EditText
+    android:id="@+id/r_input_cvv"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_below="@+id/r_tv_expire"
+    android:layout_alignEnd="@+id/r_tv_expire"
+    android:layout_alignRight="@+id/r_tv_expire"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_toRightOf="@+id/r_spin_year"
+    android:hint="CVV"
+    android:inputType="number" />
+
+<TextView
+    android:id="@+id/r_tv_paymentAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginRight="24dp"
+    android:text="Payment Address"
+    android:layout_below="@+id/r_spin_month"/>
+
+<EditText
+    android:id="@+id/r_input_streetAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginRight="24dp"
+    android:ems="10"
+    android:hint="Street Address"
+    android:inputType="textPersonName"
+    android:layout_below="@+id/r_tv_paymentAddress"/>
+
+<EditText
+    android:id="@+id/r_input_city"
+    android:layout_width="196dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:hint="City"
+    android:inputType="textPersonName"
+    android:layout_below="@+id/r_input_streetAddress"/>
+
+<Spinner
+    android:id="@+id/r_spin_state"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:entries="@array/spin_state_content"
+    android:layout_below="@+id/r_input_streetAddress"
+    android:layout_toRightOf="@id/r_input_city"/>
+
+<EditText
+    android:id="@+id/r_input_zip"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:layout_below="@+id/r_input_streetAddress"
+    android:layout_alignEnd="@+id/r_input_streetAddress"
+    android:layout_alignRight="@+id/r_input_streetAddress"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_toRightOf="@id/r_spin_state"
+    android:hint="Zip"
+    android:inputType="number" />
+
+<CheckBox
+    android:id="@+id/r_checkBox_save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginLeft="24dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:text="Save Card for Future Use"
+    android:layout_below="@id/r_input_city"/>
+
+<Button
+    android:id="@+id/r_btn_submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/r_input_city"
+    android:layout_alignEnd="@+id/r_input_zip"
+    android:layout_alignRight="@+id/r_input_zip"
+    android:layout_marginTop="2dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_toRightOf="@id/r_checkBox_save"
+    android:text="Submit Payment" />
+
+
+</RelativeLayout>

@@ -29,7 +29,7 @@ class FavoriteActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                 R.id.radio_fruit ->  data = fruit_data;
                 else ->              data = empty_data;
             }
-            arrayAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, data);
+            arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, data);
             fav_spinner.adapter = arrayAdapter;
 
         }
