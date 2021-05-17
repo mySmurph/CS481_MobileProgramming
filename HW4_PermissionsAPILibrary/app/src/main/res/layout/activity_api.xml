@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".API">
+
+    <TextView
+        android:id="@+id/tv_sign_spinner"
+        style="@style/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign" />
+
+    <Spinner
+        android:id="@+id/spin_sign"
+        style="@style/details"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/tv_day_spinner"
+        style="@style/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day" />
+
+    <Spinner
+        android:id="@+id/spin_day"
+        style="@style/details"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        android:splitMotionEvents="false" />
+
+    <Button
+        android:id="@+id/btn_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/horoscope" />
+
+    <TextView
+        android:id="@+id/tv_description_api"
+        style="@style/details"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:autoText="true" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.ce481_hw4_sirenamurphree.btn_Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    <fragment-->
+<!--        android:id="@+id/fragment3"-->
+<!--        android:name="com.ce481_hw4_sirenamurphree.btn_Back"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+</LinearLayout>

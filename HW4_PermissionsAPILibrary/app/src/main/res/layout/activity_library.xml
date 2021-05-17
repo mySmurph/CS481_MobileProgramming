@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".Library">
+
+    <ImageView
+        android:id="@+id/color_here"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        app:srcCompat="@drawable/ic_baseline_chat_bubble_24" />
+
+    <Button
+        android:id="@+id/btn_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Color" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.ce481_hw4_sirenamurphree.btn_Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
